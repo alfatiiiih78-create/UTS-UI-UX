@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Ruangan</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+
+
+        <fieldset class="form-container">
+            <legend>Kelola Ruangan</legend>
+
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="namaRuangan">Nama Ruangan</label>
+                    <input type="text" id="namaRuangan" name="nama_ruangan">
+                </div>
+                
+                <div class="form-group">
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori" name="kategori">
+                        <option value="aula">Aula</option>
+                        <option value="kelas">Kelas</option>
+                        <option value="lab">Lab</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="deskripsiRuangan">Deskripsi Ruangan:</label>
+                    <textarea id="deskripsiRuangan" name="deskripsi_ruangan"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Fasilitas Ruangan</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="soundSystem" name="fasilitas[]" value="Sound System">
+                        <label for="soundSystem">Sound System</label>
+                        
+                        <input type="checkbox" id="wifi" name="fasilitas[]" value="Wifi">
+                        <label for="wifi">Wifi</label>
+                        
+                        <input type="checkbox" id="layarBesar" name="fasilitas[]" value="Layar Besar">
+                        <label for="layarBesar">Layar Besar</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="kapasitas">Kapasitas</label>
+                    <input type="number" id="kapasitas" name="kapasitas" class="input-kapasitas">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lokasiRuangan">Lokasi Ruangan</label>
+                    <input type="text" id="lokasiRuangan" name="lokasi_ruangan">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Simpan</button>
+                    <button type="reset">Reset</button>
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+
+</body>
+</html>
